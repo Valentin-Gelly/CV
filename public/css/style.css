@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: aliceblue;
+}
+
+
+
+
+html{
+        background-image: url('/public/img/pexels-hristo-fidanov-1252890.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+header{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+}
+
+
+
+img{
+
+
+    width:100%;
+}
+
+.title{
+    place-content:center;
+    color: white;
+    font-size: 4rem;
+    font-family: "Space Mono", monospace;
+    text-transform: Uppercase;
+    cursor:auto;
+    width: auto;
+
+
+}
+
+
+.testInfo{
+    font-size: 2.5em;
+    color: rgb(240, 248, 255);
+    font-family: "Space Mono", monospace;
+}
+
+.titreInfo{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+body{
+    background-color: none;
+}
+
+main{
+    width: 100%;
+
+}
+
+.rigth{
+    background-color: rgba(10, 10, 10, 0.8);
+    width: 60%;
+    margin-left: 35%;
+    margin-bottom: 150px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.left{
+    background-color: rgba(10, 10, 10, 0.8);
+    width: 60%;
+    margin-left: 5%;
+    margin-bottom: 150px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+
+
+ h2{
+    color: aliceblue;
+    font-family:normal 16px/1.5 "Helvetica Neue", sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+
+.langageImg{
+    width: 35vh;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+
+}
+
+.langageImg::before{
+    transform: scale(0);
+}
+
+
+.langage{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.competence section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.img{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+h3{
+    font-size: 2em;
+}
+
+
+
+footer{
+    bottom: 0;
+    background-color: blueviolet;
+}
