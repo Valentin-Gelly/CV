@@ -6,7 +6,9 @@
     color: aliceblue;
 }
 
-
+a{
+    text-decoration: none;
+}
 
 
 html{
@@ -143,5 +145,11 @@ h3{
 
 footer{
     bottom: 0;
-    background-color: blueviolet;
+    background-color: rgb(16, 11, 111);
+    height: 40vh;
+}
+
+.contactLeft{
+    display: flex;
+    flex-direction: column;
 }

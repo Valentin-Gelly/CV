@@ -25,6 +25,3 @@ document.querySelectorAll(".title").forEach((element) => {
     }, 30)
   }
 })
-
-/**smooth scroll */
-var easeInQuart = new SmoothScroll('[data-easing="easeInQuart"]', {easing: 'easeInQuart'});
