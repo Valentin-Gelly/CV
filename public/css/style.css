@@ -132,7 +132,20 @@ main{
 
 .img{
     display: flex;
-    justify-content: space-around;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    padding: 24px;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    gap: 12px;
+}
+
+.item{
+    flex: 0 0 20%;
+    padding: 24px;
+    scroll-snap-align: start;
+    text-align: center;
 }
 
 
@@ -140,7 +153,6 @@ main{
 h3{
     font-size: 2em;
 }
-
 
 
 footer{
@@ -152,4 +164,7 @@ footer{
 .contactLeft{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+    text-align: center;
 }
