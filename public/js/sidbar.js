@@ -9,3 +9,4 @@ window.onscroll = function(){
   let progress = (window.pageYOffset/totalHeight) * 100;
   progressbar.style.height = Math.floor(progress) + "%";
 }
+
