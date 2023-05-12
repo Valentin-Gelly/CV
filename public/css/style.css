@@ -89,8 +89,7 @@ main{
 
 .left{
     background-color: rgba(10, 10, 10, 0.8);
-    width: 60%;
-    margin-left: 5%;
+    width: 100%;
     margin-bottom: 150px;
     border-radius: 25px;
     padding: 10px;
@@ -125,10 +124,7 @@ main{
     
 }
 
-.competence section {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
+
 
 .img{
     display: flex;
@@ -167,4 +163,128 @@ footer{
     justify-content: space-around;
     height: 90%;
     text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .rigth{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .left{
+        width: 90%;
+
+    }
+
+    .langageImg{
+        width: 100%;
+    }
+
+    .img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item{
+        flex: 0 0 100%;
+    }
+
+    .contactLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 90%;
+        text-align: center;
+    }
+
+    .titreInfo{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .testInfo{
+        font-size: 1.5em;
+    }
+
+    .langageImg{
+        width: 100%;
+    }
+
+    .langage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item{
+        flex: 0 0 100%;
+    }
+
+    .contactLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 90%;
+        text-align: center;
+    }
+
+    .titreInfo{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .testInfo{
+        font-size: 1.5em;
+    }
+
+    .langageImg{
+        width: 100%;
+    }
+
+    .langage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item{
+        flex: 0 0 100%;
+    }
+
+    .contactLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 90%;
+        text-align: center;
+    }
+
+    .titreInfo{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 2.5rem;
+    }
+
 }
