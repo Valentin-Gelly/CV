@@ -1,5 +1,7 @@
 let languages = {}
 
+
+
 function getAllRepoGit(){
     fetch("https://api.github.com/users/Valentin-Gelly/repos")
     .then(response => response.json())
@@ -29,9 +31,11 @@ function getAllRepoGit(){
             
             if (repo.description != null)
             li.innerHTML += `<p class="repoDescription">${repo.description}</p>`;
-
-
-            li.innerHTML += `<p class="repoLanguage">Language: ${repo.language}</p>`;
+            let languagesForOneRepo ="";
+            for (let key in languages[repo.name]) {
+                languagesForOneRepo += `<p class="repoLanguage">${key}</p>`;
+            }
+            li.innerHTML += `<div class="languages">${languagesForOneRepo}</div>`;
 
 
             list.appendChild(li);
@@ -47,13 +51,11 @@ function  getLanguages(idRepo){
         languages[idRepo]  ={};
         for (let key in data) {
             languages[idRepo][key] = data[key];
-
         }
-        console.log(languages);
-        return languages;
+
     });
 }
 
 
 
-getAllRepoGit();
+//getAllRepoGit();

@@ -79,9 +79,6 @@ main{
 }
 
 .rigth{
-    background-color: rgba(10, 10, 10, 0.8);
-    width: 80%;
-    margin-left: 35%;
     margin-bottom: 150px;
     border-radius: 25px;
     padding: 10px;
@@ -143,6 +140,8 @@ main{
     padding: 24px;
     scroll-snap-align: start;
     text-align: center;
+    position: relative;
+    border-radius: 25px;
 }
 
 
@@ -170,12 +169,6 @@ footer{
     .timeline{
         width: 100%;
     }
-    .rigth{
-        width: 100%;
-        margin-left: 5%;
-        margin-left: 0;
-    }
-
 }
 
 
@@ -369,7 +362,44 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin: 10px;
-    padding: 10px;
     width: 100%;
+    margin-bottom: 100px;
 }
+
+
+.overlayLanguage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(16, 11, 111);
+    border-radius: 25px;
+
+  }
+  
+  .item:hover .overlayLanguage {
+    opacity: 0.6;
+  }
+  .item:hover .textOverlayLanguage {
+    opacity: 1 !important;
+  }
+  
+  .textOverlayLanguage {
+    color: white;
+    font-size: 20px;
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    
+  }
