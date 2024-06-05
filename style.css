@@ -3,6 +3,11 @@
     padding: 0;
     margin: 0;
     transition: all 0.3s;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     
 }
 
@@ -93,9 +98,6 @@ main{
 
 .activeLink{
     background-color: rgb(119, 176, 255);
-}
-footer{
-    background-color: none;
 }
 
 
@@ -273,7 +275,7 @@ footer{
     padding-left: 0;
     display: flex;
     justify-content: space-between;
-    width:45%;
+    width:35%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -288,6 +290,56 @@ footer{
 }
 
 
+.accordion {
+    border: 5px solid #555;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    [name="accordion"] {
+        display: none;
+    }
+}
+
+
+.accordion__item {
+    width: 57vw;
+    text-align: left;
+
+    & + .accordion__item {
+        border-top: 1px solid #555;
+    }
+}
+
+.accordion__header {
+    background-color: #777;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.accordion__body {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+[name="accordion"]:checked {
+    & ~ .accordion__body {
+        clip: initial;
+        height: 100%;
+        margin: 0;
+        overflow: visible;
+        padding: 20px 10px;
+        position: static;
+    }
+}
 
 
 
@@ -488,10 +540,94 @@ footer{
       transform: translateX(-50%) scale(1);
     }
   }
-  
-  
 
   #experience_section{
     display: flex;
     flex-direction: column !important;
+  }
+
+  #portfolio_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10%;
+      justify-content: center;
+  }
+
+  .carousel-cell{
+    width: 250px;
+    height: 250px;
+    background-color: #ffffff;
+    color: black;
+      display: flex;
+    justify-content: center;
+    align-content: center;
+      margin-top: 25px;
+      text-decoration: none;
+
+  }
+
+  .carousel-cell>div{
+      display: none;
+      vertical-align: middle;
+      height: 100%;
+      align-content: center;
+      width: 100%;
+  }
+
+
+.h3Carousel{
+    display: none;
+    position: absolute;
+    text-align: center;
+    height: fit-content;
+    transform: translate(0,-50%);
+    margin-top: 50%;
+    transition: unset;
+}
+
+
+  #terre_de_durance{
+    background-image: url('./assets/logo/logo-terre-de-durance.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #voyo{
+    background-image: url('./assets/logo/voyo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #model{
+    background-image: url('./assets/logo/modelisme_logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #hand{
+    background-image: url('./assets/logo/logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #garage{
+    background-image: url('./assets/logo/benzin-logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }

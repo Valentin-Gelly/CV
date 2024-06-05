@@ -202,103 +202,82 @@
       <section class="sectionActicle" id="experience_section">
         <h2>Mes expériences Professionnelles</h2>
         <section class="experience">
-          <ul>
-            <li>Alternance de 3ème année</li>
-            <p>
-              <b>Date : </b> 2024 <br />
-              <b>Type : </b> Alternance <br />
-              <b>Durée : </b> 1 an <br />
-              <b>Entreprise : </b> IPM France à Romans sur Idère<br />
-              <b>Mission : </b> Développement Front-End. Réalisation
-              d'application de démonstration pour des salons de type MWC de
-              Barcelone. Réalisation d'application de test pour le matériel et
-              les fonctionnalités <br />
-              <b>Technologies utilisées : </b> ANGULAR, HTML/CSS/JS, Git <br />
-              <b>Compétences professionnelles : </b> Réalisation de réunion,
-              travail en équipe, Échange avec des clients<br />
-            </p>
-            <li>Stage de 2ème année</li>
-            <p>
-              <b>Date : </b> 2023 <br />
-              <b>Type : </b> Stage <br />
-              <b>Durée : </b> 11 semaines <br />
-              <b>Entreprise : </b> GAMSTAT de Valence (Groupement Aéromobilité
-              de la Section Technique de l'Armée de Terre)<br />
-              <b>Mission : </b> Développement d'une application web pour la
-              gestion des hélicoptère de la base. <br />
-              <b>Technologies utilisées : </b> PHP, MYSQL, HTML/CSS/JS, Git
-              <br />
-              <b>Compétences professionnelles : </b> Réalisation de réunion,
-              travail en équipe<br />
-            </p>
+          <ul class="accordion">
+            <li class="accordion__item">
+              <input type="checkbox" name="accordion" id="acc-1" />
+
+              <label class="accordion__header" for="acc-1"><p>Alternance de 3ème année BUT Informatique</p> <h2 id="plus1">+</h2></label>
+              <div class="accordion__body">
+                <p>
+                  <b>Date : </b> 2024 <br />
+                  <b>Type : </b> Alternance <br />
+                  <b>Durée : </b> 1 an <br />
+                  <b>Entreprise : </b> IPM France à Romans sur Isère<br />
+                  <b>Mission : </b> Développement Front-End. Réalisation
+                  d'application de démonstration pour des salons de type MWC de
+                  Barcelone. Réalisation d'application de test pour le matériel et
+                  les fonctionnalités <br />
+                  <b>Technologies utilisées : </b> ANGULAR, HTML/CSS/JS, Git <br />
+                  <b>Compétences professionnelles : </b> Réalisation de réunion,
+                  travail en équipe, Échange avec des clients<br />
+                </p>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <input type="checkbox" name="accordion" id="acc-2" />
+              <label class="accordion__header" for="acc-2"><p>Stage de 2ème année BUT Informatique</p> <h2 id="plus2">+</h2></label>
+              <div class="accordion__body">
+                <p>
+                  <b>Date : </b> 2023 <br />
+                  <b>Type : </b> Stage <br />
+                  <b>Durée : </b> 3 mois <br />
+                  <b>Entreprise : </b> GAMSTAT de Valence<br />
+                  <b>Mission : </b> Développement Front-End.
+                  Réalisation d'une applmiocation de gestion du parc d'hélicoptère  <br />
+                  <b>Technologies utilisées : </b> HTML/CSS/JS, PHP<br />
+                  <b>Compétences professionnelles : </b> Réalisation de réunion,
+                  travail en équipe<br />
+                </p>
+              </div>
+            </li>
           </ul>
+
         </section>
       </section>
       <section class="sectionActicle" id="portfolio_section">
         <h2>Quelques projets</h2>
-        <div id="contentSlide">
           <div class="carousel">
-            <div class="carousel-cell">
-              <img src="https://emrekaya1.b-cdn.net/p6.jpg" class="p" />
-              <h3>Réalisation d'un site pour un agriculteur</h3>
-              <p>
-                <b>Date de réalisation : </b> en cours <br />
-                <b>Technologie utilisée : </b> HTML/CSS/JS, Mysql
-                <br />
-                <b>Description : </b> Site internet pour un agriculteur,
-                présentation de l'exploitation, des produits et des services
-                proposés <br />
-                <a href="#" class="card__link"> plus d'info </a>
-              </p>
-            </div>
-            <div class="carousel-cell">
-              <img src="https://emrekaya1.b-cdn.net/p7.jpg" class="p" />
-              <h2 class="n">Voyo</h2>
-              <p>
-                <b>Date de réalisation : </b> 2023 <br />
-                <b>Technologie utilisée : </b> Flutter, ExpressJs, MYSQL,
-                HTML/CSS/JS <br />
-                <b>Description : </b> Application mobile pour organiser des
-                visite de bien immobiliés <br />
-                <a href="#" class="card__link"> plus d'info </a>
-              </p>
-            </div>
-            <div class="carousel-cell">
-              <img src="https://emrekaya1.b-cdn.net/p7.jpg" class="p" />
-              <h2 class="n">Création d'un site internet sur le modélisme</h2>
-              <p>
-                <b>Date de réalisation : </b> 2023 <br />
-                <b>Technologie utilisée : </b> HTML/CSS/JS <br />
-                <b>Description : </b> Site internet pour un club de modélisme<br />
-                <a href="#" class="card__link"> plus d'info </a>
-              </p>
-            </div>
-            <div class="carousel-cell">
-              <img src="https://emrekaya1.b-cdn.net/p7.jpg" class="p" />
-              <h2 class="n">Refonte d'un site internet</h2>
-              <p>
-                <b>Date de réalisation : </b> 2022 <br />
-                <b>Technologie utilisée : </b> SYMPHONY, MYSQL, HTML/CSS/JS
-                <br />
-                <b>Description : </b> Refonte du site internet pour un club de
-                Handball<br />
-                <a href="#" class="card__link"> plus d'info </a>
-              </p>
-            </div>
-            <div class="carousel-cell">
-              <img src="https://emrekaya1.b-cdn.net/p7.jpg" class="p" />
-              <h2 class="n">Gestion d'un garage</h2>
-              <p>
-                <b>Date de réalisation : </b> 2022 <br />
-                <b>Technologie utilisée : </b> SYMPHONY, MYSQL, HTML/CSS/JS
-                <br />
-                <b>Description : </b> Application web pour gérer un garage,
-                gestion de stock, organisation d'intervention<br />
-                <a href="#" class="card__link"> plus d'info </a>
-              </p>
-            </div>
+            <a class="carousel-cell" id="terre_de_durance" href="">
+              <div id="h3-terre_de_durance">
+              </div>
+              <h3 class="h3Carousel">Site Vitrine pour un agriculteur</h3>
+
+            </a>
+            <a class="carousel-cell" id="voyo">
+              <div id="h3-voyo">
+              </div>
+              <h3 class="h3Carousel">Voyo</h3>
+
+            </a>
+            <a class="carousel-cell" id="model" href="https://www.modele-club-du-luberon.fr/index.html">
+              <div id="h3-model" >
+
+              </div>
+              <h3 class="h3Carousel">Création d'un site internet sur le modélisme</h3>
+            </a>
+            <a class="carousel-cell" id="hand" href="https://github.com/achedon12/handball-project">
+              <div id="h3-hand">
+              </div>
+              <h3 class="h3Carousel">Refonte d'un site internet</h3>
+
+            </a>
+            <a class="carousel-cell" id="garage" href="https://github.com/achedon12/BenzinGarage">
+              <div id="h3-garage">
+              </div>
+              <h3 class="h3Carousel">Application web Gestion d'un garage</h3>
+
+            </a>
           </div>
-        </div>
       </section>
       <p>
         Valentin Gelly - contact :
