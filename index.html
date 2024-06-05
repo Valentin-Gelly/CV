@@ -1,232 +1,314 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/scroll.css">
-    <link rel="stylesheet" href="public/css/timeline.css">
-    <script src="public/js/script.js"></script>
-    <title>Valentin GELLY</title>
-</head>
-<div id="progressbar"></div>
-
-<body>
-
-    <div id="scrollpath"></div>
-    <div id="percent"></div>
-    <header>
-        <section class="titreInfo">
-            <h1 class="title" data-text="Valentin GELLY">Valentin GELLY</h1>
-            <h2 class="testInfo">Développeur Junior</h2>
-
-        </section>
-        <section class="scrollSection">
-            <a class="icon-scroll" href="#formationSection" data-easing="easeInQuart"></a>
-        </section>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentin Gelly</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slice.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <section class="nameHeader">
+        <h1 class="nameHeader">Valentin Gelly</h1>
+      </section>
+      <nav>
+        <a href="#" id="about" class="headerNav">À propos</a>
+        <a href="#competence_section" id="competence" class="headerNav"
+          >Mes compétences</a
+        >
+        <a href="#parcours_section" id="parcours" class="headerNav"
+          >Mon parcours</a
+        >
+        <a href="#experience_section" id="experience" class="headerNav"
+          >Mes expériences</a
+        >
+        <a href="#portfolio_section" id="portfolio" class="headerNav"
+          >Portfolio</a
+        >
+      </nav>
     </header>
+
     <main>
-
-
-        <section id="formationSection" class="rigth ">
-            <h2>Formation</h2>
-            <section class="timeline">
+      <section class="sectionActicle" id="about_section">
+        <p>
+          Je m'appelle Valentin Gelly et je suis un apprentie développeur web.
+          <br />
+          Je suis un passionné de développement web et de nouvelles
+          technologies. <br />
+          Depuis maintenant 5 ans je découvre l'informatique au travers de
+          projets plus passionnat les un que les autres. <br />
+        </p>
+        <section id="downloadPDF">
+          <a
+            href="./assets/CV GELLY Valentin.pdf"
+            download="CV Valentin GELLY"
+            id="download"
+            ><img src="./assets/logo/download.png" alt="" id="imageDownload" />
+            <p>CV en PDF</p></a
+          >
+        </section>
+        <!--<img src="./assets/photoprofil.png" alt="" srcset="">-->
+      </section>
+      <section class="sectionActicle" id="competence_section">
+        <h2>Mes compétences</h2>
+        <p>
+          Durant les dernières années j'ai pu découvrir de nombreuses
+          technologie.<br />
+          Ce sont les technologies du développement web qui m'ont le plus
+          attiré.
+        </p>
+        <section class="table_competences">
+          <ul>
+            <section class="liste_competences">
+              <section>
+                <h3>Développement logiciel</h3>
                 <ul>
-                    <li>
-                        <div>
-                            <h2>2021</h2> Baccalauréat général (lycée Louis Pasteur Avignon 84000) mention assez bien
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h2>2021-2022</h2> BUT 1 informatique (IUT Valence)
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h2>2022-2023</h2> BUT 2 informatique (IUT Valence) parcours « Réalisation d’applications »
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h2>mars 2023 - juin 2023</h2>Stage au GAMSTAT de Valence : développement d'une application
-                            web de gestion d'hélicoptères.
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h2>2023 - 2024</h2>BUT 3 informatique (IUT Valence) parcours « Réalisation d’applications »
-                            Alternance IPM France développeur Front-End
-                        </div>
-                    </li>
+                  <li>JAVA <img src="./assets/logo/java.png" alt="" /></li>
+                  <li>RUST<img src="./assets/logo/rust.png" alt="" /></li>
+                  <li>PYTHON<img src="./assets/logo/python.png" alt="" /></li>
                 </ul>
+              </section>
+              <section class="sectionDevWeb">
+                <h3>Développement web</h3>
+                <section id="devweb">
+                  <ul>
+                    <li>
+                      HTML/CSS/JS
+                      <img src="./assets/logo/HTMLCSSJS.png" alt="" />
+                    </li>
+                    <li>
+                      ANGULAR <img src="./assets/logo/angular.png" alt="" />
+                    </li>
+                    <li>REACT <img src="./assets/logo/react.png" alt="" /></li>
+                    <li>PHP <img src="./assets/logo/PHP.png" alt="" /></li>
+                    <li>
+                      SYMFONY <img src="./assets/logo/symphony.png" alt="" />
+                    </li>
+                    <li>VUEJS <img src="./assets/logo/vueJs.png" alt="" /></li>
+                    <li>
+                      EXPRESSJS <img src="./assets/logo/expressJs.png" alt="" />
+                    </li>
+                  </ul>
+                </section>
+              </section>
+              <section>
+                <h3>Base de données</h3>
+                <ul>
+                  <li>SQL <img src="./assets/logo/SQL.png" alt="" /></li>
+                  <li>MYSQL <img src="./assets/logo/mysql.png" alt="" /></li>
+                  <li>
+                    POSTGRESQL
+                    <img src="./assets/logo/postgreesql.png" alt="" />
+                  </li>
+                </ul>
+              </section>
+              <section>
+                <h3>Versionning</h3>
+                <ul>
+                  <li>GIT <img src="./assets/logo/git.png" alt="" /></li>
+                </ul>
+              </section>
+              <section>
+                <h3>IDE</h3>
+                <ul>
+                  <li>VSCODE <img src="./assets/logo/vscode.png" alt="" /></li>
+                  <li>
+                    JETBRAINS <img src="./assets/logo/jetbrains.svg" alt="" />
+                  </li>
+                </ul>
+              </section>
+              <section>
+                <h3>Autres</h3>
+                <ul>
+                  <li>LINUX<img src="./assets/logo/linux.png" alt="" /></li>
+                  <li>Windows<img src="./assets/logo/windows.png" alt="" /></li>
+                </ul>
+              </section>
             </section>
+            <li>Compétence professionnelle</li>
+            <section class="liste_competences compentencepro">
+              <section>
+                <h3>Communication</h3>
+                <ul>
+                  <li>Présentation</li>
+                  <li>Organisation de réunion</li>
+                  <li>Travail en équipe</li>
+                  <li>Méthode Agile</li>
+                </ul>
+              </section>
+              <section>
+                <h3>Autres</h3>
+                <ul>
+                  <li>Esprit d'initiative</li>
+                  <li>Autonomie</li>
+                  <li>Motivé</li>
+                </ul>
+              </section>
+            </section>
+          </ul>
         </section>
-        <section class="competence left ">
-            <h2>Mes Compétences</h2>
-            <section class="langage">
-                <h3>Mes langages de programmation</h3>
-                <section class="img">
-                    <section class="item">
-                        <img src="/public/img/Python-logo-notext.svg.png" class="langageImg" alt="">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">Python</div>
-                    </section>
-                    <section class="item">
-                        <img src="/public/img/PHP-logo.svg.png" class="langageImg" alt="">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">PHP</div>
-                    </section>
-                    <section class="item">
-                        <img src="/public/img/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png"
-                            class="langageImg htmlcss" alt="">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">HTML/CSS/JS</div>
+      </section>
 
-                    </section>
-                    <section class="item">
-                        <img src="/public/img/The_C_Programming_Language_logo.svg.png" class="langageImg" alt="">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">C</div>
-                    </section>
-                    <section class="item">
-                        <img src="/public/img/Java-Logo.png" class="langageImg">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">Java</div>
+      <section class="sectionActicle" id="parcours_section">
+        <h2>Mon parcours</h2>
 
-                    </section>
-                    <section class="item">
-                        <img src="/public/img/flutter.png" class="langageImg">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">Flutter</div>
-                    </section>
-                </section>
-            </section>
-            <section class="framework">
-                <h3>Mes frameworks</h3>
-                <section class="img">
-                    <section class="item">
-                        <img src="/public/img/Vue.png" class="langageImg" alt="">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">VueJs</div>
-                    </section>
-                    <section class="item">
-                        <img src="/public/img/React-icon.svg.png" class="langageImg" alt="">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">React</div>
-                    </section>
-                    
-                    <section class="item">
-                        <img src="/public/img/angular.png" class="langageImg" alt="">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">Angular</div>
-                    </section>
-                    <section class="item">
-                        <img src="/public/img/next.png" class="langageImg" alt="">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">Next JS</div>
-                    </section>
-                    <section class="item">
-                        <img src="/public/img/symfony_white_03.png" class="langageImg" alt="">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">Symfony</div>
-                    </section>
-                    <section class="item">
-                        <img src="/public/img/laravel.png" class="langageImg" alt="">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">Laravel</div>
-                    </section>
-                    
-                </section>
-            </section>
-            <section class="tools">
-                <h3>Mes outils de travail</h3>
-                <section class="img">
-                    <section class="item">
-                        <img src="/public/img/Visual_Studio_Code_1.35_icon.svg.png" class="langageImg" alt="">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">VS Code</div>
-                    </section>
-                    <section class="item">
-                        <img src="/public/img/IntelliJ_IDEA_Icon.svg.png" alt="" class="langageImg">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">Suite IntelliJ</div>
-                    </section>
-
-                </section>
-
-            </section>
-            <section class="version">
-                <h3>Outils de versionnage</h3>
-
-                <section class="img">
-                    <section class="item">
-                        <a href="https://github.com/Valentin-Gelly">
-                            <img src="/public/img/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png"
-                                alt="" class="langageImg"></a>
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">Suite IntelliJ</div>
-                    </section>
-                    <section class="item">
-
-                        <img src="/public/img/GitLab_logo.svg.png" alt="" class="langageImg">
-                        <div class="overlayLanguage">
-                        </div>
-                        <div class="textOverlayLanguage">Suite IntelliJ</div>
-                    </section>
-                </section>
-            </section>
+        <section class="timeline">
+          <ul>
+            <li>
+              <div>
+                <time>2024-2026</time>
+                <h3>ESGI Lyon - Mastère "ingénierie du web" - Alternance</h3>
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>2023-2024</time>
+                <h3>IUT Valence - BUT Informatique - Alternance</h3>
+                <p>parcours réalisation et conception d'application</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>2021-2023</time>
+                <h3>IUT Valence - BUT Informatique</h3>
+                <p>parcours réalisation et conception d'application</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>2019-2021</time>
+                <h3>Lycée Louis Pasteur</h3>
+                <p>
+                  Spécialité au BAC : Mathématique experte - NSI - physique
+                  chimie
+                </p>
+              </div>
+            </li>
+          </ul>
         </section>
-
-        <section id="projects">
-            <h2>Mes projets</h2>
-            <section class="project">
-                <section id="list-repo">
-
-                </section>
-            </section>-
-
-
-
+      </section>
+      <section class="sectionActicle" id="experience_section">
+        <h2>Mes expériences Professionnelles</h2>
+        <section class="experience">
+          <ul>
+            <li>Alternance de 3ème année</li>
+            <p>
+              <b>Date : </b> 2024 <br />
+              <b>Type : </b> Alternance <br />
+              <b>Durée : </b> 1 an <br />
+              <b>Entreprise : </b> IPM France à Romans sur Idère<br />
+              <b>Mission : </b> Développement Front-End. Réalisation
+              d'application de démonstration pour des salons de type MWC de
+              Barcelone. Réalisation d'application de test pour le matériel et
+              les fonctionnalités <br />
+              <b>Technologies utilisées : </b> ANGULAR, HTML/CSS/JS, Git <br />
+              <b>Compétences professionnelles : </b> Réalisation de réunion,
+              travail en équipe, Échange avec des clients<br />
+            </p>
+            <li>Stage de 2ème année</li>
+            <p>
+              <b>Date : </b> 2023 <br />
+              <b>Type : </b> Stage <br />
+              <b>Durée : </b> 11 semaines <br />
+              <b>Entreprise : </b> GAMSTAT de Valence (Groupement Aéromobilité
+              de la Section Technique de l'Armée de Terre)<br />
+              <b>Mission : </b> Développement d'une application web pour la
+              gestion des hélicoptère de la base. <br />
+              <b>Technologies utilisées : </b> PHP, MYSQL, HTML/CSS/JS, Git
+              <br />
+              <b>Compétences professionnelles : </b> Réalisation de réunion,
+              travail en équipe<br />
+            </p>
+          </ul>
         </section>
-
-
-
+      </section>
+      <section class="sectionActicle" id="portfolio_section">
+        <h2>Quelques projets</h2>
+        <div id="contentSlide">
+          <div class="carousel">
+            <div class="carousel-cell">
+              <img src="https://emrekaya1.b-cdn.net/p6.jpg" class="p" />
+              <h3>Réalisation d'un site pour un agriculteur</h3>
+              <p>
+                <b>Date de réalisation : </b> en cours <br />
+                <b>Technologie utilisée : </b> HTML/CSS/JS, Mysql
+                <br />
+                <b>Description : </b> Site internet pour un agriculteur,
+                présentation de l'exploitation, des produits et des services
+                proposés <br />
+                <a href="#" class="card__link"> plus d'info </a>
+              </p>
+            </div>
+            <div class="carousel-cell">
+              <img src="https://emrekaya1.b-cdn.net/p7.jpg" class="p" />
+              <h2 class="n">Voyo</h2>
+              <p>
+                <b>Date de réalisation : </b> 2023 <br />
+                <b>Technologie utilisée : </b> Flutter, ExpressJs, MYSQL,
+                HTML/CSS/JS <br />
+                <b>Description : </b> Application mobile pour organiser des
+                visite de bien immobiliés <br />
+                <a href="#" class="card__link"> plus d'info </a>
+              </p>
+            </div>
+            <div class="carousel-cell">
+              <img src="https://emrekaya1.b-cdn.net/p7.jpg" class="p" />
+              <h2 class="n">Création d'un site internet sur le modélisme</h2>
+              <p>
+                <b>Date de réalisation : </b> 2023 <br />
+                <b>Technologie utilisée : </b> HTML/CSS/JS <br />
+                <b>Description : </b> Site internet pour un club de modélisme<br />
+                <a href="#" class="card__link"> plus d'info </a>
+              </p>
+            </div>
+            <div class="carousel-cell">
+              <img src="https://emrekaya1.b-cdn.net/p7.jpg" class="p" />
+              <h2 class="n">Refonte d'un site internet</h2>
+              <p>
+                <b>Date de réalisation : </b> 2022 <br />
+                <b>Technologie utilisée : </b> SYMPHONY, MYSQL, HTML/CSS/JS
+                <br />
+                <b>Description : </b> Refonte du site internet pour un club de
+                Handball<br />
+                <a href="#" class="card__link"> plus d'info </a>
+              </p>
+            </div>
+            <div class="carousel-cell">
+              <img src="https://emrekaya1.b-cdn.net/p7.jpg" class="p" />
+              <h2 class="n">Gestion d'un garage</h2>
+              <p>
+                <b>Date de réalisation : </b> 2022 <br />
+                <b>Technologie utilisée : </b> SYMPHONY, MYSQL, HTML/CSS/JS
+                <br />
+                <b>Description : </b> Application web pour gérer un garage,
+                gestion de stock, organisation d'intervention<br />
+                <a href="#" class="card__link"> plus d'info </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p>
+        Valentin Gelly - contact :
+        <a href="mailto:gelly.valentin@gmail.com">par mail </a>
+      </p>
+      <button onclick="topFunction()" id="goTop" title="Go to top">
+        <img src="./assets/toTheTop.png" alt="" />
+      </button>
     </main>
-
-</body>
-<footer>
-
-    <h2 style="width: 100%;height: 10%">Me contacter</h2>
-    <section class="contactLeft">
-        <p> Mail : <a href="mailto:gelly.valentin@gmail.com">gelly.valentin@gmail.com</a></p>
-        <p> Linkedin : <a href="https://www.linkedin.com/in/valentin-gelly-480bb9235/">valentin-gelly</a></p>
-        <p> Github : <a href="https://github.com/Valentin-Gelly">Valentin-Gelly</a></p>
-        <p>Instagram : <a href="https://www.instagram.com/valentingelly/">Valentin Gelly</a></p>
-
-    </section>
-
-
-</footer>
-
-<script src="public/js/webEffect.js"></script>
-<script src="public/js/timeline.js"></script>
-
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/js/splide.min.js"></script>
+  </body>
 </html>
