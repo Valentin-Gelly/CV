@@ -8,7 +8,6 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    
 }
 
 li{
@@ -40,14 +39,15 @@ header {
     justify-content: space-between;
     color: white;
     align-items: center;
+    transition: 0.3s;
 
 }
 #header.shrink {
-    height: 80px;
-    line-height:80px;
-    margin: 20px;
-    width: calc(100% - 40px);
-    border-radius: 25px;
+  height: 160px;
+  line-height:80px;
+  margin: 20px;
+  width: calc(100% - 40px);
+  border-radius: 25px;
 }
 
 
@@ -290,7 +290,7 @@ main{
 }
 
 
-.accordion {
+details {
     border: 5px solid #555;
     list-style: none;
     margin: 0;
@@ -302,7 +302,7 @@ main{
 }
 
 
-.accordion__item {
+details {
     width: 57vw;
     text-align: left;
 
@@ -320,27 +320,7 @@ main{
     padding: 10px;
 }
 
-.accordion__body {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-}
-
-[name="accordion"]:checked {
-    & ~ .accordion__body {
-        clip: initial;
-        height: 100%;
-        margin: 0;
-        overflow: visible;
-        padding: 20px 10px;
-        position: static;
-    }
-}
-
+.accor
 
 
 
@@ -425,9 +405,7 @@ main{
     transition: background 0.5s ease-in-out;
   }
   
-  .timeline ul li.in-view::after {
-    background: linear-gradient(to left top,  #FDBB2D 0%, #22C1C3 100%);
-  }
+
   
   .timeline ul li div {
     visibility: hidden;
@@ -630,4 +608,216 @@ main{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  #burgerMenu{
+    display: none;
+  }
+
+
+  @media screen and (max-width: 1341px) and (min-width: 498px) {
+    main{
+      padding-top: 80px;
+    }
+
+
+    #header.shrink {
+        height: 160px;
+        line-height: fit-content;
+        margin: 0;
+        width: 100%;
+        border-radius: unset; 
+    }
+
+    #about_section{
+      flex-direction: column;
+    }
+
+    header{
+      flex-direction: column;
+    }
+
+    .nameHeader{
+      margin: 0;
+
+    }
+
+    .table_competences ul section{
+      width: 100%;
+    }
+
+
+    .timeline ul li:nth-child(odd) div {
+      left: 45px;
+    }
+    
+    .timeline ul li:nth-child(odd) div::before {
+      left: 0px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent rgb(142, 190, 122) transparent transparent;
+    }
+    
+    .timeline ul li:nth-child(even) div {
+      left: 44px;
+    }
+    
+    .timeline ul li:nth-child(even) div::before {
+      left: 0px;
+      border-width: 8px 0 8px 16px;
+      border-color: transparent transparent transparent rgb(246, 187, 50);
+      rotate: 0;
+    }
+
+    .timeline {
+      text-align: left;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+    }
+    
+  }
+
+  @media screen and (max-width: 497px) {
+
+    .menu{
+      display: none !important;
+    }
+
+
+    #burgerMenu{
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      border-radius: 0 0 0 25px;
+    }
+
+    .bar1{
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    .bar2{
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    .bar3{
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+
+    main{
+      padding-top: 80px;
+    }
+
+    #header.shrink {
+        height: 160px;
+        line-height: fit-content;
+        margin: 0;
+        width: 100%;
+        border-radius: unset; 
+    }
+
+    #about_section{
+      flex-direction: column;
+    }
+
+    header{
+      flex-direction: column;
+    }
+
+    .nameHeader{
+      margin: 0;
+
+    }
+
+    .table_competences ul section{
+      width: 100% !important;
+    }
+
+    .timeline ul li div{
+      width: 100%;
+      margin: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .sectionActicle {
+      width: 100% !important;
+    }
+
+    #devweb ul{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      li{
+        width: 100%;
+      }
+    }
+
+    .timeline {
+      text-align: left;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+    }
+    .timeline ul li:nth-child(even) div {
+      left: 44px;
+    }
+    
+    .timeline ul li:nth-child(even) div::before {
+      left: 0px;
+      border-width: 8px 0 8px 16px;
+      border-color: transparent transparent transparent rgb(246, 187, 50);
+      rotate: 0;
+    }
+
+    .timeline {
+      text-align: left;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      padding: 0;
+    }
+    
+
+    .timeline ul li {
+      list-style-type: none;
+    position: relative;
+    width: 0px;
+    margin: 0 -42px;
+    padding-top: 50px;
+    background: #fff;
+    }
+
+    .timeline ul li.in-view div{
+      width: 90vw;
+    }
+
+    .sectionActicle{
+      padding: 0 !important;
+      
+    }
+
+    .timeline ul li div::before{
+      display: none;
+    }
+
+    .liste_competences section li{
+      margin: 10px;
+      width: 100%;
+    }
   }

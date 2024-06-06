@@ -23,7 +23,12 @@
       <section class="nameHeader">
         <h1 class="nameHeader">Valentin Gelly</h1>
       </section>
-      <nav>
+      <div id="burgerMenu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <nav class="menu">
         <a href="#" id="about" class="headerNav">À propos</a>
         <a href="#competence_section" id="competence" class="headerNav"
           >Mes compétences</a
@@ -45,7 +50,7 @@
         <p>
           Je m'appelle Valentin Gelly et je suis un apprentie développeur web.
           <br />
-          Je suis un passionné de développement web et de nouvelles
+          Je suis un passionné de développement informatique et de nouvelles
           technologies. <br />
           Depuis maintenant 5 ans je découvre l'informatique au travers de
           projets plus passionnat les un que les autres. <br />
@@ -59,7 +64,6 @@
             <p>CV en PDF</p></a
           >
         </section>
-        <!--<img src="./assets/photoprofil.png" alt="" srcset="">-->
       </section>
       <section class="sectionActicle" id="competence_section">
         <h2>Mes compétences</h2>
@@ -153,7 +157,7 @@
                 <ul>
                   <li>Esprit d'initiative</li>
                   <li>Autonomie</li>
-                  <li>Motivé</li>
+                  <li>Motivation</li>
                 </ul>
               </section>
             </section>
@@ -202,82 +206,87 @@
       <section class="sectionActicle" id="experience_section">
         <h2>Mes expériences Professionnelles</h2>
         <section class="experience">
-          <ul class="accordion">
-            <li class="accordion__item">
-              <input type="checkbox" name="accordion" id="acc-1" />
+          <details>
+            <summary class="accordion__header">
+              Alternance de 3ème année BUT Informatique
+            </summary>
+            <p class="accordion__body">
+              <b>Date : </b> 2024 <br />
+              <b>Type : </b> Alternance <br />
+              <b>Durée : </b> 1 an <br />
+              <b>Entreprise : </b> IPM France à Romans sur Isère<br />
+              <b>Mission : </b> Développement Front-End. Réalisation
+              d'application de démonstration pour des salons de type MWC de
+              Barcelone. Réalisation d'application de test pour le matériel et
+              les fonctionnalités <br />
+              <b>Technologies utilisées : </b> ANGULAR, HTML/CSS/JS, Git <br />
+              <b>Compétences professionnelles : </b> Réalisation de réunion,
+              travail en équipe, Échange avec des clients<br />
+            </p>
+          </details>
 
-              <label class="accordion__header" for="acc-1"><p>Alternance de 3ème année BUT Informatique</p> <h2 id="plus1">+</h2></label>
-              <div class="accordion__body">
-                <p>
-                  <b>Date : </b> 2024 <br />
-                  <b>Type : </b> Alternance <br />
-                  <b>Durée : </b> 1 an <br />
-                  <b>Entreprise : </b> IPM France à Romans sur Isère<br />
-                  <b>Mission : </b> Développement Front-End. Réalisation
-                  d'application de démonstration pour des salons de type MWC de
-                  Barcelone. Réalisation d'application de test pour le matériel et
-                  les fonctionnalités <br />
-                  <b>Technologies utilisées : </b> ANGULAR, HTML/CSS/JS, Git <br />
-                  <b>Compétences professionnelles : </b> Réalisation de réunion,
-                  travail en équipe, Échange avec des clients<br />
-                </p>
-              </div>
-            </li>
-            <li class="accordion__item">
-              <input type="checkbox" name="accordion" id="acc-2" />
-              <label class="accordion__header" for="acc-2"><p>Stage de 2ème année BUT Informatique</p> <h2 id="plus2">+</h2></label>
-              <div class="accordion__body">
-                <p>
-                  <b>Date : </b> 2023 <br />
-                  <b>Type : </b> Stage <br />
-                  <b>Durée : </b> 3 mois <br />
-                  <b>Entreprise : </b> GAMSTAT de Valence<br />
-                  <b>Mission : </b> Développement Front-End.
-                  Réalisation d'une applmiocation de gestion du parc d'hélicoptère  <br />
-                  <b>Technologies utilisées : </b> HTML/CSS/JS, PHP<br />
-                  <b>Compétences professionnelles : </b> Réalisation de réunion,
-                  travail en équipe<br />
-                </p>
-              </div>
-            </li>
-          </ul>
-
+          <details>
+            <summary class="accordion__header">
+              Stage de 2ème année BUT Informatique
+            </summary>
+            <p class="accordion__body">
+              <b>Date : </b> 2023 <br />
+              <b>Type : </b> Stage <br />
+              <b>Durée : </b> 3 mois <br />
+              <b>Entreprise : </b> GAMSTAT de Valence<br />
+              <b>Mission : </b> Développement Front-End. Réalisation d'une
+              applmiocation de gestion du parc d'hélicoptère <br />
+              <b>Technologies utilisées : </b> HTML/CSS/JS, PHP<br />
+              <b>Compétences professionnelles : </b> Réalisation de réunion,
+              travail en équipe<br />
+            </p>
+          </details>
         </section>
       </section>
       <section class="sectionActicle" id="portfolio_section">
         <h2>Quelques projets</h2>
-          <div class="carousel">
-            <a class="carousel-cell" id="terre_de_durance" href="">
-              <div id="h3-terre_de_durance">
-              </div>
-              <h3 class="h3Carousel">Site Vitrine pour un agriculteur</h3>
-
-            </a>
-            <a class="carousel-cell" id="voyo">
-              <div id="h3-voyo">
-              </div>
-              <h3 class="h3Carousel">Voyo</h3>
-
-            </a>
-            <a class="carousel-cell" id="model" href="https://www.modele-club-du-luberon.fr/index.html">
-              <div id="h3-model" >
-
-              </div>
-              <h3 class="h3Carousel">Création d'un site internet sur le modélisme</h3>
-            </a>
-            <a class="carousel-cell" id="hand" href="https://github.com/achedon12/handball-project">
-              <div id="h3-hand">
-              </div>
-              <h3 class="h3Carousel">Refonte d'un site internet</h3>
-
-            </a>
-            <a class="carousel-cell" id="garage" href="https://github.com/achedon12/BenzinGarage">
-              <div id="h3-garage">
-              </div>
-              <h3 class="h3Carousel">Application web Gestion d'un garage</h3>
-
-            </a>
-          </div>
+        <div class="carousel">
+          <a class="carousel-cell" id="terre_de_durance" target="_blank">
+            <div id="h3-terre_de_durance"></div>
+            <h3 class="h3Carousel">
+              Site Vitrine pour un agriculteur <br />
+              <span style="color: red">In progress</span>
+            </h3>
+          </a>
+          <a class="carousel-cell" id="voyo">
+            <div id="h3-voyo"></div>
+            <h3 class="h3Carousel">Voyo</h3>
+          </a>
+          <a
+            class="carousel-cell"
+            id="model"
+            href="https://www.modele-club-du-luberon.fr/index.html"
+            target="_blank"
+          >
+            <div id="h3-model"></div>
+            <h3 class="h3Carousel">
+              Création d'un site internet sur le modélisme
+            </h3>
+          </a>
+          <a
+            class="carousel-cell"
+            id="hand"
+            href="https://github.com/Valentin-Gelly/handball-project"
+            target="_blank"
+          >
+            <div id="h3-hand"></div>
+            <h3 class="h3Carousel">Refonte d'un site internet</h3>
+          </a>
+          <a
+            class="carousel-cell"
+            id="garage"
+            href="https://github.com/Valentin-Gelly/BenzinGarage"
+            target="_blank"
+          >
+            <div id="h3-garage"></div>
+            <h3 class="h3Carousel">Application web Gestion d'un garage</h3>
+          </a>
+        </div>
       </section>
       <p>
         Valentin Gelly - contact :

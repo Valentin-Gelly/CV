@@ -99,13 +99,13 @@ document.addEventListener("DOMContentLoaded", function () {
   run(); // Run once on load to catch already visible sections
 });
 
-let input = document.getElementsByName("accordion")
+let input = document.getElementsByName("accordion");
 for (let i = 0; i < input.length; i++) {
   input[i].onclick = function () {
     let id = input[i].id.split("-")[1];
     let plus = document.getElementById(`plus${id}`);
     plus.innerHTML = input[i].checked ? "-" : "+";
-  }
+  };
 }
 
 // hover carousel-cell class element and show h3 on the section
@@ -113,24 +113,30 @@ let carouselCell = document.getElementsByClassName("carousel-cell");
 let section = document.getElementsByClassName("h3");
 for (let i = 0; i < carouselCell.length; i++) {
   let id = carouselCell[i].id;
-    carouselCell[i].onmouseover = function () {
-      carouselCell[i].style.borderRadius = "35px";
-      carouselCell[i].style.filter = "drop-shadow(0 0 10px #000)";
-     document.getElementById(`h3-${id}`).style.display = "block";
-      document.getElementById(`h3-${id}`).style.backgroundColor = "white";
-      document.getElementById(`h3-${id}`).style.borderRadius = "35px";
-      document.getElementById(`h3-${id}`).style.opacity = "0.7";
-      carouselCell[i].getElementsByTagName("h3")[0].style.display = "block";
-
-    }
-    carouselCell[i].onmouseout = function () {
-      carouselCell[i].style.borderRadius = "0";
-      carouselCell[i].style.filter = "unset";
-      carouselCell[i].style.backgroundColor = "white";
-      document.getElementById(`h3-${id}`).style.display = "none";
-      document.getElementById(`h3-${id}`).style.borderRadius = "35px";
-      carouselCell[i].getElementsByTagName("h3")[0].style.display = "none";
-
-
-    }
+  carouselCell[i].onmouseover = function () {
+    carouselCell[i].style.borderRadius = "35px";
+    carouselCell[i].style.filter = "drop-shadow(0 0 10px #000)";
+    document.getElementById(`h3-${id}`).style.display = "block";
+    document.getElementById(`h3-${id}`).style.backgroundColor = "white";
+    document.getElementById(`h3-${id}`).style.borderRadius = "35px";
+    document.getElementById(`h3-${id}`).style.opacity = "0.7";
+    carouselCell[i].getElementsByTagName("h3")[0].style.display = "block";
+  };
+  carouselCell[i].onmouseout = function () {
+    carouselCell[i].style.borderRadius = "0";
+    carouselCell[i].style.filter = "unset";
+    carouselCell[i].style.backgroundColor = "white";
+    document.getElementById(`h3-${id}`).style.display = "none";
+    document.getElementById(`h3-${id}`).style.borderRadius = "35px";
+    carouselCell[i].getElementsByTagName("h3")[0].style.display = "none";
+  };
 }
+
+document.getElementById("burgerMenu").addEventListener("click", function () {
+  let nav = document.getElementsByClassName("menu")[0];
+  if (nav.style.display === "none") {
+    nav.style.display = "block";
+  } else {
+    nav.style.display = "none";
+  }
+});
