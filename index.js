@@ -1,3 +1,5 @@
+const $ = require("jquery");
+
 $(function () {
   var shrinkHeader = 150;
   $(window).scroll(function () {
